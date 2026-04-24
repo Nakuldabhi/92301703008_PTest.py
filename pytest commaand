@@ -1,0 +1,24 @@
+Test_pythondemo.py
+import pytest
+import pythondemo
+def test_add_pass():
+assert pythondemo.add(2, 3) == 5
+def test_add_fail():
+assert pythondemo.add(2, 3) == 6
+def test_multiply_pass():
+assert pythondemo.multiply(4, 3) == 12
+def test_multiply_fail():
+assert pythondemo.multiply(4, 3) == 11
+def test_factorial_pass():
+assert pythondemo.factorial(5) == 120
+def test_factorial_fail():
+assert pythondemo.factorial(4) == 20
+def test_is_even_pass():
+assert pythondemo.is_even(4) is True
+def test_is_even_fail():
+assert pythondemo.is_even(5) is True
+def test_divide_zero_pass():
+with pytest.raises(ValueError):
+pythondemo.divide(10, 0)
+def test_divide_fail():
+assert pythondemo.divide(10, 2) == 6
