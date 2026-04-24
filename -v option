@@ -1,0 +1,45 @@
+D:\>node -v
+v22.19.0
+D:\>npm -v
+10.9.3
+D:\>mkdir npm-pr4
+D:\>cd npm-pr4
+D:\npm-pr4>git init
+Initialized empty Git repository in D:/npm-pr4/.git/
+D:\npm-pr4>npm init -y
+Wrote to D:\npm-pr4\package.json:
+{
+"name": "npm-pr4",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" fifi exit 1"
+},
+"keywords": [],
+"author": "",
+"license": "ISC"
+}
+D:\npm-pr4>npm install express
+added 65 packages, and audited 66 packages in 4s
+22 packages are looking for funding
+run `npm fund` for details
+found 0 vulnerabilities
+D:\npm-pr4>npm install axios
+added 11 packages, and audited 77 packages in 3s
+24 packages are looking for funding
+run `npm fund` for details
+found 0 vulnerabilities
+D:\npm-pr4>npm install nodemon --save-dev
+added 26 packages, and audited 103 packages in 3s
+29 packages are looking for funding
+run `npm fund` for details
+found 0 vulnerabilities
+D:\npm-pr4>npm list
+npm-pr4@1.0.0 D:\npm-pr4
++-- axios@1.13.6
++-- express@5.2.1
+`-- nodemon@3.1.14
+D:\npm-pr4>notepad index.js
+D:\npm-pr4>node index.js
+Server running at http://localhost:3000
